@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="369.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filetypeconverter.FXMLDocumentController">
+  <children>
+    <ListView fx:id="listview" layoutX="8.0" layoutY="17.0" onDragDropped="#onDropEvent" onDragOver="#onDragEvent" prefHeight="335.0" prefWidth="661.0" />
+    <Text layoutX="225.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drag and Drop Files in the box below:" />
+    <TextField fx:id="destFolderTextBox" layoutX="673.0" layoutY="16.0" prefHeight="25.0" prefWidth="180.0" promptText="Destination Folder" text="" />
+    <Button fx:id="loadDirButton" layoutX="853.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#browseDirectory" text="..." />
+    <Button id="runButton" fx:id="executeButton" layoutX="673.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#executeConversion" prefHeight="46.0" prefWidth="92.0" text="Execute" />
+    <Button fx:id="resetButton" layoutX="785.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#resetAll" prefHeight="46.0" prefWidth="92.0" text="Reset" />
+  </children>
+</AnchorPane>
